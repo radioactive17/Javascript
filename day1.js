@@ -31,3 +31,10 @@ console.log(someVar);
 
 console.log(isNaN(nullVar));
 console.log(isNaN(someVar));
+
+
+
+
+
+
+
