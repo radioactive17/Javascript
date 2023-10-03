@@ -59,3 +59,10 @@ console.log( new Date().toLocaleString());
 console.log(new Date().toLocaleDateString());
 
 console.log(new Date().toLocaleTimeString());
+
+
+(function(){
+    setInterval(()=>{
+        console.log(new Date().toLocaleTimeString());
+    }, 1000)
+})
