@@ -1,0 +1,39 @@
+<html>
+    <head>
+        <title>Dummy for Learning Javascript</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    </head>
+    <body>
+        <div class = 'container'>
+            <div><p id = 'pId' onmousedown="mouseDown()" onmouseup="mouseUp()">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Scelerisque eleifend donec pretium vulputate sapien nec. Iaculis eu non diam phasellus vestibulum lorem sed. Quam elementum pulvinar etiam non. Volutpat odio facilisis mauris sit amet. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non. At augue eget arcu dictum varius duis at consectetur. Interdum velit euismod in pellentesque. Mollis nunc sed id semper risus in hendrerit gravida. Donec ac odio tempor orci dapibus ultrices. Et malesuada fames ac turpis egestas. Risus feugiat in ante metus dictum. In iaculis nunc sed augue lacus viverra vitae. Integer vitae justo eget magna fermentum. Cras sed felis eget velit aliquet sagittis id. Nam libero justo laoreet sit amet cursus sit.
+
+Hendrerit gravida rutrum quisque non tellus orci ac auctor augue. Sit amet risus nullam eget felis. Elit sed vulputate mi sit amet mauris commodo quis imperdiet. Sollicitudin ac orci phasellus egestas tellus. Habitant morbi tristique senectus et netus et malesuada. Sed turpis tincidunt id aliquet risus feugiat in. Pretium nibh ipsum consequat nisl vel pretium. Non sodales neque sodales ut etiam sit amet nisl purus. Eu facilisis sed odio morbi quis commodo odio aenean sed. Molestie nunc non blandit massa enim. Morbi non arcu risus quis varius.
+            </p></div>
+        </div>
+        
+    
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script>
+        function mouseDown(){
+            document.getElementById('pId').style.color = '#FF0000';
+        }
+        function mouseUp(){
+            document.getElementById('pId').style.color = '#FF00FF';   
+
+        }
+
+        const enter = document.getElementById('pId');
+        enter.addEventListener('mouseenter', ()=>{
+            enter.style.backgroundColor = 'yellow';
+        })
+        enter.addEventListener('mouseleave', () => {
+            enter.style.backgroundColor = 'orange';
+        })
+
+    </script>
+    </body>
+</html>
